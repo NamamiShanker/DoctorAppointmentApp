@@ -4,5 +4,5 @@ A small project intended to facilitate easier medical clinic and hospital appoin
 ## Team Members - 
   > [Ishita Saxena](https://github.com/ishita1209)  
   > [Ayushmaan Sharma](https://github.com/ayushman999)  
-  > Khitij KS  
-  > Namami Shanker  
+  > [Khitij KS](https://github.com/vatsks)  
+  > [Namami Shanker](https://github.com/vatsks)  
