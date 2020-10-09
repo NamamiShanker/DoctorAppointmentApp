@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788729807984",
+    "firebase_url": "https://medipoint-310af.firebaseio.com",
+    "project_id": "medipoint-310af",
+    "storage_bucket": "medipoint-310af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788729807984:android:70eb32946cc6abff7420b5",
+        "android_client_info": {
+          "package_name": "com.example.android.medipoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788729807984-95ibgjn5eglds1aehpqucfbrg769m5nm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.medipoint",
+            "certificate_hash": "a734a9dd835b429c22acc75db57f27c351f4a79c"
+          }
+        },
+        {
+          "client_id": "788729807984-nh1ds38j65otdv8a18tls6lba2gh1lra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4ss4xDVskPk1XmdKwXCCbXTQ4z9XKCF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788729807984-nh1ds38j65otdv8a18tls6lba2gh1lra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
