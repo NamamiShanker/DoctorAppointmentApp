@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array_spinner">
+        <item>@string/male</item>
+        <item>@string/female</item>
+        <item>@string/other</item>
+    </string-array>
+    <string-array name="time_slot">
+        <item>9-10 AM</item>
+        <item>10-11 AM</item>
+        <item>11-12 PM</item>
+        <item>12-1 PM</item>
+        <item>1-2 PM</item>
+        <item>2-3 PM</item>
+    </string-array>
+    <string name="other">Other</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+</resources>

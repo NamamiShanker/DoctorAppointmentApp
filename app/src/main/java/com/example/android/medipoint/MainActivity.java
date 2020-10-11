@@ -2,6 +2,7 @@ package com.example.android.medipoint;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,6 +10,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,14 +25,31 @@ public class MainActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN =100 ;
     private FirebaseAuth mAuth;
     private String mUsername="ANONYMOUS";
-    TextView textView;
+    Button setAppointment;
+    Button getStatus;
+    TextView heyuser;
     private FirebaseAuth.AuthStateListener mFirebaseAuthStateListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Home");
         setContentView(R.layout.activity_main);
         mAuth= FirebaseAuth.getInstance();
-        textView=(TextView) findViewById(R.id.username);
+        setAuthListener();
+        heyuser=(TextView) findViewById(R.id.textview);
+        setAppointment=(Button) findViewById(R.id.make_appointment);
+        getStatus=(Button) findViewById(R.id.check_status);
+        setAppointment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent transfer=new Intent(MainActivity.this, AddApointment.class);
+                startActivity(transfer);
+            }
+        });
+
+    }
+
+    private void setAuthListener() {
         mFirebaseAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -58,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void onSigninInitialized(String displayName) {
         mUsername="Hey! "+displayName;
-        textView.setText(mUsername);
+        heyuser.setText(mUsername);
     }
 
     @Override
