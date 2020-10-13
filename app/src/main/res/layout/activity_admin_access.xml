@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAccess">
+
+    <Button
+        android:id="@+id/time_slot"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
+        android:background="@drawable/radius"
+        android:text=" Set Time Slot"
+
+        app:layout_constraintHorizontal_weight="1"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <Button
+        android:id="@+id/Start_check"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
+        android:background="@drawable/radius"
+        android:text="Start Checkup"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/time_slot"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <Button
+        android:id="@+id/Wait_List"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
+        android:background="@drawable/radius"
+        android:text="Waiting List"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Start_check"
+        app:layout_constraintVertical_bias="0.589"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
