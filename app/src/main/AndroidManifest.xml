@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddApointment"></activity>
+        <activity android:name=".WaitingList"></activity>
+        <activity android:name=".Checkup" />
+        <activity android:name=".TimeSlot" />
+        <activity android:name=".AdminAccess" />
+        <activity android:name=".AddApointment" />
         <activity android:name=".splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +22,8 @@
             </intent-filter>
             <!-- android:theme="@style/AppTheme.Splash" -->
 
-
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
